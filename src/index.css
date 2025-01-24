@@ -1,0 +1,49 @@
+/* Navbar.css */
+.custom-hamburger .navbar-toggler-icon {
+  background-color: #fb576b !important;
+
+}
+.logo {
+  color: white;
+}
+.link-navbar {
+  color: #fb576b;
+}
+.nav {
+  background-color: #2e2e2e;
+}
+.radio-img {
+  max-width: 165px;
+  height: auto;
+}
+
+.section-btn {
+  color: #fb576b;
+  padding: 20px;
+  background-color: #2a2a2a;
+  margin: 10px;
+  border-radius: 10px;
+}
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 95%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+margin-left: 25px;
+margin-bottom: 10PX;
+}
+ footer {  
+    margin-bottom: 100px;
+ }
+ .bi{  
+    color:  #fb576b;
+ }
+ @media (min-width: 992px) { 
+  footer {
+      margin-bottom: 10px;
+  }
+}
