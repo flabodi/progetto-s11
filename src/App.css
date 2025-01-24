@@ -13,6 +13,6 @@ body {
 }
 @media (max-width: 767px) {
   body {
-    margin-left: 0; /* Margine zero per dispositivi mobile */
+    margin-left: 0; 
   }
 }

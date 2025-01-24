@@ -4,7 +4,7 @@ const Player = function () {
     <div className="player">
       <div className="d-flex align-items-center justify-content-between">
         <img src={ cm2 } alt=""  className="w-25 h-25"/>
-        {/* Pulsanti di controllo */}
+       
         <div className="d-flex align-items-center">
           <button className="btn  me-2">
             <i className="bi bi-play-fill "></i>

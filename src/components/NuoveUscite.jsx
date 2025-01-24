@@ -13,7 +13,7 @@ const NuoveUscite = function () {
         );
         if (response.ok) {
           const data = await response.json();
-          setSearchResults(data.data); // Salva i risultati della ricerca nello stato
+          setSearchResults(data.data); 
         } else {
           console.error("Errore nel recupero dei dati");
         }
@@ -23,12 +23,10 @@ const NuoveUscite = function () {
     };
 
     fetchData();
-  }, [query]); // Effettua la fetch ogni volta che cambia `query`
+  }, [query]); 
 
-  // Limita i risultati a 10 per desktop e 6 per mobile
-  const limitedResultsLg = searchResults.slice(0, 8); // 8 album per desktop
-  const limitedResultsSm = searchResults.slice(0, 6); // 6 album per mobile
-
+  const limitedResultsLg = searchResults.slice(0, 8); 
+  const limitedResultsSm = searchResults.slice(0, 6); 
   return (
   <>
   <Container className="bg-dark">
@@ -40,7 +38,7 @@ const NuoveUscite = function () {
         {limitedResultsSm.map((result) => (
           <div
             key={result.id}
-            className="col-6 col-sm-4 col-md-2 text-white mb-4" // 3 per riga su mobile
+            className="col-6 col-sm-4 col-md-2 text-white mb-4" 
           >
             <img
               src={result.album.cover_medium}
@@ -52,12 +50,12 @@ const NuoveUscite = function () {
         ))}
       </div>
 
-      {/* Layout per desktop */}
+      
       <div className="row d-none d-lg-flex">
         {limitedResultsLg.map((result) => (
           <div
             key={result.id}
-            className="col-6 col-sm-4 col-md-2 col-lg-3 text-white mb-4" // 8 per riga su desktop
+            className="col-6 col-sm-4 col-md-2 col-lg-3 text-white mb-4" 
           >
             <img
               src={result.album.cover_medium}

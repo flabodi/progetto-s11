@@ -4,19 +4,19 @@ import appleLogo from "../assets/logos/music.svg";
 const MyNavbar = function () {
   return (
     <>
-      {/* Navbar laterale per desktop (lg) */}
+     
       <Navbar
         expand="lg"
         className="navbar-dark bg-dark position-fixed top-0 start-0 h-100 d-none d-lg-flex flex-column align-items-start"
       >
         <Container className="d-flex flex-column align-items-start">
-          {/* Logo in alto */}
+         
           <div>
             <img className="logo mb-4" src={appleLogo} alt="Apple Music Logo" />
           </div>
 
-          {/* Barra di ricerca sotto il logo (visibile solo su schermi grandi con bg-secondary) */}
-          <Form className="w-75 d-none d-lg-block bg-secondary">
+          
+          <Form className="w-75 d-md-none d-lg-block bg-secondary">
             <div className="input-group">
               <Button variant="outline-light" className="border-0 rounded-0">
                 <i className="bi bi-search"></i>
@@ -30,10 +30,10 @@ const MyNavbar = function () {
             </div>
           </Form>
 
-          {/* Navbar Collapse e Links */}
+          
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-0 flex-column w-100">
-              {/* Flex in colonna per i link con icone */}
+             
               <Nav.Link href="#home" className="d-flex align-items-center text-white">
                 <i className="bi bi-house-door-fill me-2"></i> Home
               </Nav.Link>
@@ -48,15 +48,15 @@ const MyNavbar = function () {
         </Container>
       </Navbar>
 
-      {/* Navbar orizzontale per dispositivi mobile e tablet (sm) */}
+      
       <Navbar expand="sm" className="navbar-dark bg-dark d-lg-none">
         <Container>
-          {/* Logo in alto */}
+         
           <div>
             <img className="logo mb-4" src={appleLogo} alt="Apple Music Logo" />
           </div>
 
-          {/* Barra di ricerca per mobile (visibile solo su desktop, nascosta su mobile) */}
+          
           <Form className="w-75 d-none d-sm-block">
             <div className="input-group">
               <Button variant="outline-light" className="border-0 rounded-0">
@@ -71,7 +71,7 @@ const MyNavbar = function () {
             </div>
           </Form>
 
-          {/* Navbar Toggle per mobile */}
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-0">
